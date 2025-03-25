@@ -1,0 +1,426 @@
+{% include "header.njk" %}
+
+<!-- Hero Section with Background -->
+<section class="py-20 bg-gray-50 relative overflow-hidden">
+    <!-- Hero Background Image -->
+    <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&q=80" 
+             alt="Yoga Training Background" 
+             class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-white bg-opacity-90"></div>
+    </div>
+    
+    <!-- Existing decorative elements -->
+    <div class="absolute top-0 right-0 w-96 h-96 opacity-5">
+        <img src="/images/mandala-circle.png" alt="" class="w-full">
+    </div>
+    
+    <div class="absolute bottom-0 left-0 w-48 h-48 opacity-5">
+        <img src="/images/om-symbol.png" alt="" class="w-full">
+    </div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="font-['Cormorant_Garamond'] text-4xl md:text-5xl font-medium text-gray-800 mb-6 text-center pt-10">
+                Yoga Teacher Training Programs
+            </h1>
+            <div class="w-32 h-0.5 bg-gradient-to-r from-primary to-secondary mx-auto mb-10"></div>
+            <p class="text-lg md:text-xl text-gray-600 text-center mb-10 leading-relaxed">
+                Transform your practice into a teaching journey with our comprehensive teacher training programs. Rooted in tradition, designed for the modern world.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Course Filter -->
+<section class="py-8 bg-white border-b border-gray-100">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-wrap items-center justify-center gap-4">
+            <button class="px-6 py-2 rounded-full bg-primary text-white font-medium text-sm" id="all-courses">All Courses</button>
+            <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium text-sm" id="beginner-courses">Beginner</button>
+            <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium text-sm" id="advanced-courses">Advanced</button>
+            <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium text-sm" id="specialized-courses">Specialized</button>
+        </div>
+    </div>
+</section>
+
+<!-- Main Courses Section -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+            <!-- Level One (200 Hours) Course -->
+            <div class="mb-16 bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-2/5">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80" 
+                             alt="Level One Yoga Teacher Training" 
+                             class="h-full w-full object-cover object-center">
+                    </div>
+                    <div class="md:w-3/5 p-8">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-primary text-white text-xs font-medium py-1 px-3 rounded-full">200 Hours</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium py-1 px-3 rounded-full ml-2">Beginner Friendly</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium py-1 px-3 rounded-full ml-2">Yoga Alliance Certified</span>
+                        </div>
+                        
+                        <h2 class="font-['Cormorant_Garamond'] text-3xl font-medium text-gray-800 mb-4">
+                            Level One: Foundation Program
+                        </h2>
+                        
+                        <div class="w-16 h-0.5 bg-gradient-to-r from-primary to-secondary mb-6"></div>
+                        
+                        <p class="text-gray-600 mb-6">
+                            Our foundational 200-hour program provides comprehensive training in yoga philosophy, teaching methodology, anatomy, and fundamental asanas. Designed for practitioners ready to begin their teaching journey or deepen their practice.
+                        </p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            <div>
+                                <h3 class="font-medium text-gray-800 mb-3">Program Highlights:</h3>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-circle text-primary text-xs mt-1.5 mr-2"></i>
+                                        <span>Asana alignment and teaching techniques</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-circle text-primary text-xs mt-1.5 mr-2"></i>
+                                        <span>Yoga philosophy and history</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-circle text-primary text-xs mt-1.5 mr-2"></i>
+                                        <span>Anatomy for yoga teachers</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="font-medium text-gray-800 mb-3">Available Formats:</h3>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-calendar text-primary mr-2"></i>
+                                        <span>4-week intensive (Mon-Fri)</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-calendar text-primary mr-2"></i>
+                                        <span>Weekend program (5 months)</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-calendar text-primary mr-2"></i>
+                                        <span>Online hybrid (3 months)</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-wrap items-center justify-between">
+                            <div class="mb-4 md:mb-0">
+                                <span class="text-3xl font-medium text-gray-800">₹85,000</span>
+                                <span class="text-sm text-gray-500 line-through ml-2">₹95,000</span>
+                            </div>
+                            <div class="space-x-4">
+                                <a href="/courses/level-one" class="inline-flex items-center justify-center bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-lg font-medium transition-colors text-sm">
+                                    View Details
+                                </a>
+                                <a href="/apply" class="inline-flex items-center justify-center border border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-medium transition-colors text-sm">
+                                    Apply Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Level Two (300 Hours) Course -->
+            <div class="mb-16 bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-2/5">
+                        <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?auto=format&fit=crop&q=80" 
+                             alt="Level Two Yoga Teacher Training" 
+                             class="h-full w-full object-cover object-center">
+                    </div>
+                    <div class="md:w-3/5 p-8">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-primary text-white text-xs font-medium py-1 px-3 rounded-full">300 Hours</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs font-medium py-1 px-3 rounded-full ml-2">Advanced</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium py-1 px-3 rounded-full ml-2">Yoga Alliance Certified</span>
+                        </div>
+                        
+                        <h2 class="font-['Cormorant_Garamond'] text-3xl font-medium text-gray-800 mb-4">
+                            Level Two: Advanced Program
+                        </h2>
+                        
+                        <div class="w-16 h-0.5 bg-gradient-to-r from-primary to-secondary mb-6"></div>
+                        
+                        <p class="text-gray-600 mb-6">
+                            Take your teaching to the next level with our advanced 300-hour program. Deepen your knowledge of yoga philosophy, advanced asanas, specialized teaching methodologies, and therapeutic applications of yoga.
+                        </p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            <div>
+                                <h3 class="font-medium text-gray-800 mb-3">Program Highlights:</h3>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-circle text-primary text-xs mt-1.5 mr-2"></i>
+                                        <span>Advanced asana and adjustments</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-circle text-primary text-xs mt-1.5 mr-2"></i>
+                                        <span>Therapeutic applications</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-circle text-primary text-xs mt-1.5 mr-2"></i>
+                                        <span>Advanced teaching methodology</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="font-medium text-gray-800 mb-3">Prerequisites:</h3>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mr-2"></i>
+                                        <span>200-hour certification</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mr-2"></i>
+                                        <span>At least 1 year teaching experience</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mr-2"></i>
+                                        <span>Regular personal practice</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-wrap items-center justify-between">
+                            <div class="mb-4 md:mb-0">
+                                <span class="text-3xl font-medium text-gray-800">₹125,000</span>
+                                <span class="text-sm text-gray-500 line-through ml-2">₹145,000</span>
+                            </div>
+                            <div class="space-x-4">
+                                <a href="/courses/level-two" class="inline-flex items-center justify-center bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-lg font-medium transition-colors text-sm">
+                                    View Details
+                                </a>
+                                <a href="/apply" class="inline-flex items-center justify-center border border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-medium transition-colors text-sm">
+                                    Apply Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            
+            <!-- Specialized Courses Section -->
+            <div class="mt-20 mb-16">
+                <h2 class="font-['Cormorant_Garamond'] text-3xl font-medium text-gray-800 mb-6 text-center">
+                    Specialized Training Programs
+                </h2>
+                <div class="w-24 h-0.5 bg-gradient-to-r from-primary to-secondary mx-auto mb-10"></div>
+                <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12">
+                    Expand your teaching expertise with our focused training modules in specific areas of yoga practice.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Prenatal Yoga -->
+                    <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100">
+                        <div class="h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&q=80" 
+                                 alt="Prenatal Yoga Training" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <span class="bg-pink-100 text-pink-800 text-xs font-medium py-1 px-3 rounded-full">85 Hours</span>
+                            </div>
+                            <h3 class="font-['Cormorant_Garamond'] text-2xl font-medium text-gray-800 mb-3">
+                                Prenatal Yoga Certification
+                            </h3>
+                            <div class="w-12 h-0.5 bg-gradient-to-r from-primary to-secondary mb-4"></div>
+                            <p class="text-gray-600 mb-6">
+                                Learn to teach safe and nurturing yoga classes for expectant mothers throughout all trimesters.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="font-medium text-gray-800">₹35,000</span>
+                                </div>
+                                <a href="/courses/prenatal-yoga" class="text-primary hover:text-primary-dark font-medium transition-colors text-sm flex items-center">
+                                    Learn More
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Yoga Therapy -->
+                    <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100">
+                        <div class="h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80" 
+                                 alt="Yoga Therapy Training" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium py-1 px-3 rounded-full">100 Hours</span>
+                            </div>
+                            <h3 class="font-['Cormorant_Garamond'] text-2xl font-medium text-gray-800 mb-3">
+                                Yoga Therapy Foundations
+                            </h3>
+                            <div class="w-12 h-0.5 bg-gradient-to-r from-primary to-secondary mb-4"></div>
+                            <p class="text-gray-600 mb-6">
+                                Explore therapeutic applications of yoga for common conditions including back pain, anxiety, and stress.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="font-medium text-gray-800">₹40,000</span>
+                                </div>
+                                <a href="/courses/yoga-therapy" class="text-primary hover:text-primary-dark font-medium transition-colors text-sm flex items-center">
+                                    Learn More
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Meditation Training -->
+                    <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100">
+                        <div class="h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80" 
+                                 alt="Meditation Teacher Training" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <span class="bg-purple-100 text-purple-800 text-xs font-medium py-1 px-3 rounded-full">75 Hours</span>
+                            </div>
+                            <h3 class="font-['Cormorant_Garamond'] text-2xl font-medium text-gray-800 mb-3">
+                                Meditation Teacher Training
+                            </h3>
+                            <div class="w-12 h-0.5 bg-gradient-to-r from-primary to-secondary mb-4"></div>
+                            <p class="text-gray-600 mb-6">
+                                Learn to guide others in developing their own meditation practice using various traditional techniques.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="font-medium text-gray-800">₹30,000</span>
+                                </div>
+                                <a href="/courses/meditation-training" class="text-primary hover:text-primary-dark font-medium transition-colors text-sm flex items-center">
+                                    Learn More
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Enrollment Process Section -->
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="font-['Cormorant_Garamond'] text-3xl font-medium text-gray-800 mb-6 text-center">
+                Enrollment Process
+            </h2>
+            <div class="w-24 h-0.5 bg-gradient-to-r from-primary to-secondary mx-auto mb-10"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="mx-auto w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+                        <span class="text-2xl font-semibold text-primary">1</span>
+                    </div>
+                    <h3 class="font-medium text-gray-800 mb-2">Apply</h3>
+                    <p class="text-gray-600 text-sm">
+                        Complete the online application form with your background and goals.
+                    </p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="mx-auto w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+                        <span class="text-2xl font-semibold text-primary">2</span>
+                    </div>
+                    <h3 class="font-medium text-gray-800 mb-2">Interview</h3>
+                    <p class="text-gray-600 text-sm">
+                        Brief discussion with faculty to ensure the program aligns with your goals.
+                    </p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="mx-auto w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+                        <span class="text-2xl font-semibold text-primary">3</span>
+                    </div>
+                    <h3 class="font-medium text-gray-800 mb-2">Registration</h3>
+                    <p class="text-gray-600 text-sm">
+                        Secure your spot with a deposit payment and complete paperwork.
+                    </p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="text-center">
+                    <div class="mx-auto w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+                        <span class="text-2xl font-semibold text-primary">4</span>
+                    </div>
+                    <h3 class="font-medium text-gray-800 mb-2">Preparation</h3>
+                    <p class="text-gray-600 text-sm">
+                        Receive pre-course materials and prepare for your training journey.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="/application-process" class="inline-flex items-center text-primary hover:text-primary-dark font-medium transition-colors">
+                    Learn more about the application process
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-16 bg-primary bg-opacity-10">
+    <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-['Cormorant_Garamond'] text-3xl font-medium text-gray-800 mb-6">
+                Ready to Begin Your Teaching Journey?
+            </h2>
+            <div class="w-24 h-0.5 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
+            <p class="text-lg text-gray-600 mb-10">
+                Take the first step toward becoming a certified yoga teacher. Our admissions team is here to support you every step of the way.
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="/apply" class="inline-flex items-center bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-lg font-medium transition-colors">
+                    Apply Now
+                </a>
+                <a href="/contact" class="inline-flex items-center bg-white border border-gray-300 hover:border-primary text-gray-700 hover:text-primary px-8 py-3 rounded-lg font-medium transition-colors">
+                    Contact Us
+                </a>
+                <a href="/schedule-call" class="inline-flex items-center bg-white border border-gray-300 hover:border-primary text-gray-700 hover:text-primary px-8 py-3 rounded-lg font-medium transition-colors">
+                    Schedule a Call
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript for course filters -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Simple filter functionality can be added here if needed
+        // This is a placeholder for future filter implementation
+    });
+</script>
+
+{% include "footer.njk" %}
