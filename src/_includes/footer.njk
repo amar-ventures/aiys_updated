@@ -1,3 +1,10 @@
+
+{% set assetsPath = "" %}
+{% if page.url and page.url != "/" %}
+  {% set assetsPath = "../" %}
+{% endif %}
+
+
 <!-- Footer Section -->
     <footer class="bg-gray-900 text-white relative overflow-hidden">
         <!-- Decorative Elements -->
