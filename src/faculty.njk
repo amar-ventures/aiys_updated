@@ -1,0 +1,117 @@
+{% include "header.njk" %}
+
+<!-- Hero Section -->
+<section class="py-20 relative overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1588286840104-8957b019727f?auto=format&fit=crop&q=80" 
+             alt="Yoga Training" 
+             class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    </div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="font-['Cormorant_Garamond'] text-4xl md:text-5xl font-medium text-white mb-6">
+                Meet Our Expert Faculty
+            </h1>
+            <div class="w-32 h-0.5 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
+            <p class="text-xl text-gray-200 leading-relaxed">
+                Learn from experienced teachers who combine deep knowledge of traditional yoga with modern teaching expertise.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Faculty Grid Section -->
+<section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <!-- Faculty Card 1 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm group">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80" 
+                         alt="Guru Amit Sharma" 
+                         class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <p class="text-white text-sm font-medium bg-primary/80 backdrop-blur-sm rounded-full px-3 py-1">
+                            Lead Instructor
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-['Cormorant_Garamond'] text-xl font-medium text-gray-800 mb-2">Guru Amit Sharma</h3>
+                    <p class="text-gray-500 text-sm mb-4">E-RYT 500, 20+ Years Experience</p>
+                    <p class="text-gray-600 mb-4">Specializes in traditional Hatha Yoga and advanced pranayama techniques.</p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="text-gray-400 hover:text-primary">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faculty Card 2 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm group">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1616699002805-0741e1e4a9c5?auto=format&fit=crop&q=80" 
+                         alt="Dr. Priya Mehta" 
+                         class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <p class="text-white text-sm font-medium bg-secondary/80 backdrop-blur-sm rounded-full px-3 py-1">
+                            Yoga Therapy
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-['Cormorant_Garamond'] text-xl font-medium text-gray-800 mb-2">Dr. Priya Mehta</h3>
+                    <p class="text-gray-500 text-sm mb-4">PhD in Yoga Therapy, E-RYT 500</p>
+                    <p class="text-gray-600 mb-4">Expert in therapeutic yoga and mindfulness practices.</p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="text-gray-400 hover:text-primary">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faculty Card 3 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm group">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1599447421416-3414500d18a5?auto=format&fit=crop&q=80" 
+                         alt="John Matthews" 
+                         class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <p class="text-white text-sm font-medium bg-primary/80 backdrop-blur-sm rounded-full px-3 py-1">
+                            Asana Expert
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-['Cormorant_Garamond'] text-xl font-medium text-gray-800 mb-2">John Matthews</h3>
+                    <p class="text-gray-500 text-sm mb-4">E-RYT 500, Former Athlete</p>
+                    <p class="text-gray-600 mb-4">Specializes in alignment and athletic yoga practices.</p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="text-gray-400 hover:text-primary">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "footer.njk" %}
