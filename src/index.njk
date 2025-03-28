@@ -1,15 +1,14 @@
-
 {% include "header.njk" %}
 
 
-{% set ass = "" %}
+{% set apath = "" %}
 {% if page.url and page.url != "/" %}
-  {% set ass = "../" %}
+  {% set apath = "../" %}
 {% endif %}
 
 
     <!-- Hero Section with side-aligned content and instructor image -->
-    <section class="relative min-h-screen py-6 md:py-0 flex items-center">
+    <section class="relative min-h-screen py-6 md:py-6 flex items-center">
       
       
       <!-- Sacred Geometry Pattern / Om Symbol
@@ -24,8 +23,7 @@
       
       <div class="absolute top-0 right-0 w-80 h-80 z-10 opacity-25">
           <img src="images/mandala.png" alt="" class="w-full">
-      </div>
-       -->
+      </div> -->
       <!-- Content Container with side-aligned layout -->
       <div class="container mx-auto px-0 relative z-20 flex flex-col md:flex-row items-center pt-16">
           <!-- Left Text Content -->
@@ -71,15 +69,15 @@
                   </div>
               </div>
               
-              <!-- CTA Buttons with enhanced design -->
-              <div class="flex flex-wrap gap-6">
-                  <button class="bg-secondary hover:bg-secondary-light text-white px-8 py-3 rounded-full text-lg font-medium shadow-xl transform transition duration-300 hover:-translate-y-1 hover:shadow-2xl border-b-4 border-secondary-dark">
-                      Start Your Journey
-                  </button>
+            <!-- CTA Buttons with enhanced design -->
+            <div class="flex flex-wrap gap-6">
+                 <a href="#whychooseus"> <button class="bg-secondary hover:bg-secondary-light text-white px-8 py-3 rounded-full text-lg font-medium shadow-xl transform transition duration-300 hover:-translate-y-1 hover:shadow-2xl border-b-4 border-secondary-dark">
+                    Start Your Journey
+                </button></a>
                   
-                  <button class="bg-transparent border-2 border-gray-800 text-gray-800 px-8 py-3 rounded-full text-lg font-medium shadow-lg hover:bg-white hover:border-white hover:text-gray-800 transform transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
-                      Explore Programs
-                  </button>
+                 <a href="{{apath}}/courses"> <button class="bg-transparent border-2 border-gray-800 text-gray-800 px-8 py-3 rounded-full text-lg font-medium shadow-lg hover:bg-white hover:border-white hover:text-gray-800 transform transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
+                    Explore Programs
+                </button></a>
               </div>
           </div>
           
@@ -110,7 +108,7 @@
   </section>
 
   <!-- Why Choose Us Section - Enhanced Design -->
-  <section class="py-24 relative overflow-hidden bg-gray-50">
+  <section id="whychooseus" class="py-24 relative overflow-hidden bg-gray-50">
       <!-- Decorative yoga-inspired background elements with more subtlety -->
       <div class="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-white to-transparent"></div>
       
@@ -366,7 +364,7 @@
           </div>
           
           <div class="text-center mt-12">
-              <a href="#" class="inline-flex items-center bg-white px-8 py-4 rounded-full shadow-md text-green-600 font-medium hover:text-orange-500 transition-colors border-2 border-green-600 hover:border-orange-500">
+              <a href="{{apath}}/courses" class="inline-flex items-center bg-white px-8 py-4 rounded-full shadow-md text-green-600 font-medium hover:text-orange-500 transition-colors border-2 border-green-600 hover:border-orange-500">
                   View All Courses
                   <i class="fas fa-arrow-right ml-3"></i>
               </a>
@@ -395,15 +393,15 @@
                   Our holistic approach to yoga teacher training creates profound transformations in physical, mental and spiritual wellbeing.
               </p>
           </div>
-          
-          <!-- Featured Transformation -->
+        <!-- Featured Transformation -->
+        <div class="max-w-5xl mx-auto mb-12"></div>
           <div class="max-w-5xl mx-auto mb-12">
               <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
                   <div class="flex flex-col md:flex-row">
                       <!-- Student Before/After Image -->
                       <div class="md:w-1/2 relative">
                           <div class="aspect-w-16 aspect-h-9 h-full">
-                              <img src="https://images.unsplash.com/photo-1589456506629-b2ea1a8576fb?auto=format&fit=crop&q=80" 
+                              <img src="https://images.unsplash.com/photo-1524863479829-916d8e77f114?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
                                    alt="Yoga Practitioner Story" 
                                    class="w-full h-full object-cover">
                           </div>
@@ -415,31 +413,32 @@
                       </div>
 
                       <!-- Student Testimonial -->
-                      <div class="md:w-1/2 p-8 flex flex-col justify-center">
-                          <div class="mb-4">
-                              <span class="inline-block bg-primary-light text-primary-dark text-xs uppercase tracking-wider py-1 px-3 rounded-full font-medium">Life-Changing Journey</span>
-                          </div>
-                          <h3 class="font-['Cormorant_Garamond'] text-2xl font-medium text-gray-800 mb-4">
-                              "Yoga gave me back my life."
-                          </h3>
-                          <p class="text-gray-600 mb-6">
-                              "After years of chronic pain and stress, I found relief through the Adishesha yoga program. Not only did I transform physically, losing 10kg and gaining strength, but I discovered inner peace and purpose. Now I teach others and earn more than I ever did in my corporate job."
-                          </p>
-                          <!-- Student Profile -->
-                          <div class="flex items-center mb-4">
-                              <img src="https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?auto=format&fit=crop&q=80" 
-                                   alt="Meera Patel" 
-                                   class="w-12 h-12 rounded-full object-cover mr-4">
-                              <div>
-                                  <h4 class="font-medium text-gray-800">Meera Patel</h4>
-                                  <p class="text-gray-500">200-Hour Program Graduate</p>
-                              </div>
-                          </div>
-                          <a href="transformations.html" class="text-primary hover:text-secondary font-medium flex items-center">
-                              Read full story
-                              <i class="fas fa-arrow-right ml-2"></i>
-                          </a>
-                      </div>
+                                        <!-- Student Testimonial -->
+                    <div class="md:w-1/2 p-8 flex flex-col justify-center">
+                        <div class="mb-4">
+                            <span class="inline-block bg-primary-light text-primary-dark text-xs uppercase tracking-wider py-1 px-3 rounded-full font-medium">Life-Changing Journey</span>
+                        </div>
+                        <h3 class="font-['Cormorant_Garamond'] text-2xl font-medium text-gray-800 mb-4">
+                            "Yoga transformed my body, mind, and career."
+                        </h3>
+                        <p class="text-gray-600 mb-6">
+                            "After working as a school teacher for 8 years, I found myself constantly fatigued and dealing with back problems. The 200-hour program at Adishesha not only healed my physical ailments but opened an entirely new career path. I now run my own yoga studio in Kochi where I teach specialized classes for women and children, earning twice my previous income while working fewer hours."
+                        </p>
+                        <!-- Kerala Lady Profile -->
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.pexels.com/photos/8436460/pexels-photo-8436460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                                 alt="Lakshmi Nambiar" 
+                                 class="w-12 h-12 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="font-medium text-gray-800">Lakshmi Nambiar</h4>
+                                <p class="text-gray-500">200-Hour Program Graduate, Kochi</p>
+                            </div>
+                        </div>
+                        <a href="transformations.html" class="text-primary hover:text-secondary font-medium flex items-center">
+                            Read full story
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
                   </div>
               </div>
           </div>
@@ -549,7 +548,7 @@
       <div class="container mx-auto px-4 relative z-10">
           <div class="text-center mb-16">
               <h2 class="font-['Cormorant_Garamond'] text-3xl md:text-4xl font-medium text-gray-800 mb-5 leading-tight">
-                  Our Sacred Spaces
+                  Our Gallery
               </h2>
               <div class="w-32 h-0.5 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
               <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -564,8 +563,8 @@
                   <img src="https://images.unsplash.com/photo-1593810450967-f9c42742e326?auto=format&fit=crop&q=80" alt="Main Yoga Studio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                   <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-500"></div>
                   <div class="absolute bottom-0 left-0 p-4 md:p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <h3 class="font-['Cormorant_Garamond'] text-xl md:text-2xl font-medium">Main Studio</h3>
-                      <p class="text-sm md:text-base">Our spacious practice area with natural light</p>
+                      <h3 class="font-['Cormorant_Garamond'] text-xl md:text-2xl font-medium">Sample</h3>
+                      <p class="text-sm md:text-base"> practice</p>
                   </div>
               </div>
               
@@ -574,8 +573,8 @@
                   <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80" alt="Meditation Space" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                   <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-500"></div>
                   <div class="absolute bottom-0 left-0 p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <h3 class="font-['Cormorant_Garamond'] text-lg font-medium">Meditation Hall</h3>
-                      <p class="text-xs md:text-sm">Quiet space for mindfulness</p>
+                      <h3 class="font-['Cormorant_Garamond'] text-lg font-medium">sample</h3>
+                      <p class="text-xs md:text-sm">Quiet space</p>
                   </div>
               </div>
               
@@ -583,8 +582,8 @@
                   <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?auto=format&fit=crop&q=80" alt="Group Class" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                   <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-500"></div>
                   <div class="absolute bottom-0 left-0 p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <h3 class="font-['Cormorant_Garamond'] text-lg font-medium">Group Session</h3>
-                      <p class="text-xs md:text-sm">Learning advanced techniques</p>
+                      <h3 class="font-['Cormorant_Garamond'] text-lg font-medium">sample</h3>
+                      <p class="text-xs md:text-sm">Learning</p>
                   </div>
               </div>
               
@@ -592,8 +591,8 @@
                   <img src="https://images.unsplash.com/photo-1588286840104-8957b019727f?auto=format&fit=crop&q=80" alt="Outdoor Practice" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                   <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-500"></div>
                   <div class="absolute bottom-0 left-0 p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <h3 class="font-['Cormorant_Garamond'] text-lg font-medium">Outdoor Space</h3>
-                      <p class="text-xs md:text-sm">Morning practice in nature</p>
+                      <h3 class="font-['Cormorant_Garamond'] text-lg font-medium">sample</h3>
+                      <p class="text-xs md:text-sm">Morning </p>
                   </div>
               </div>
               
@@ -601,19 +600,20 @@
                   <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?auto=format&fit=crop&q=80" alt="Yoga Props" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                   <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-500"></div>
                   <div class="absolute bottom-0 left-0 p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <h3 class="font-['Cormorant_Garamond'] text-lg font-medium">Equipment</h3>
-                      <p class="text-xs md:text-sm">Quality props for proper alignment</p>
+                      <h3 class="font-['Cormorant_Garamond'] text-lg font-medium">sample</h3>
+                      <p class="text-xs md:text-sm">Quality </p>
                   </div>
               </div>
               
-              <!-- Gallery CTA -->
-              <div class="flex justify-center w-full mt-12">
-                  <a href="/gallery" 
-                     class="inline-flex items-center bg-white px-6 py-3 rounded-full shadow-sm text-gray-700 font-medium hover:text-primary transition-colors border border-gray-200 hover:border-primary">
-                      View Full Gallery
-                      <i class="fas fa-images ml-2"></i>
-                  </a>
-              </div>
+          </div>
+          
+          <!-- Gallery CTA -->
+          <div class="flex justify-center items-center w-full mt-12">
+              <a href="/gallery" 
+                 class="inline-flex items-center bg-white px-6 py-3 rounded-full shadow-sm text-gray-700 font-medium hover:text-primary transition-colors border border-gray-200 hover:border-primary mx-auto">
+                  View Full Gallery
+                  <i class="fas fa-images ml-2"></i>
+              </a>
           </div>
       </div>
   </section>
@@ -678,26 +678,8 @@
               </div>
               
                   
-  <!-- Simple Testimonial Section -->
-  <section class="py-16 bg-white">
-      <div class="container mx-auto px-4">
-          <div class="max-w-3xl mx-auto text-center">
-              <!-- Simple quote symbol -->
-              <div class="text-5xl text-primary opacity-30 mb-6">"</div>
-              
-              <!-- Testimonial text -->
-              <p class="font-['Cormorant_Garamond'] text-2xl text-gray-700 mb-8 leading-relaxed italic">
-                  As a physician, I was skeptical about yoga's benefits. After experiencing the training at Adishesha Institute, I now recommend it to my patients for holistic healing that complements traditional medicine.
-              </p>
-              
-              <!-- Simple attribution -->
-              <div class="inline-block mb-2">
-                  <h4 class="font-medium text-gray-800">Dr. Priya Sharma</h4>
-                  <p class="text-gray-600">500-Hour Graduate, Integrative Health Practitioner</p>
-              </div>
-          </div>
-      </div>
-  </section>
+  <!-- Enhanced Call to Action Section (replacing the Simple Testimonial) -->
+
 
 <!-- Close all open sections and divs before footer -->
         </div>
@@ -707,8 +689,8 @@
 <!-- Close previous section properly -->
 </section>
 
-<!-- Newsletter Section -->
-<section class="py-20 px-4 lg:px-8 bg-gradient-to-r from-secondary to-secondary-dark text-white relative overflow-hidden">
+<!-- Enhanced Newsletter Section with Better Call to Action -->
+<section class="py-20 px-4 lg:px-8 bg-gradient-to-r from-primary to-primary-dark text-white relative overflow-hidden">
     <!-- Decorative Elements -->
     <div class="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-white opacity-10"></div>
     <div class="absolute -bottom-16 -left-16 w-48 h-48 rounded-full bg-white opacity-10"></div>
@@ -717,58 +699,65 @@
         <div class="grid md:grid-cols-2 gap-12 items-center">
             <!-- Left Content -->
             <div>
-                <span class="inline-block bg-white/20 text-white text-xs uppercase tracking-wider py-2 px-4 rounded-full font-semibold mb-4">Stay Connected</span>
-                <h2 class="font-['Cormorant_Garamond'] text-4xl mb-6">Join Our Community of Yogis</h2>
-                <p class="mb-6">Subscribe to receive updates on upcoming programs, events, and exclusive yoga resources for your practice and teaching journey.</p>
+                <span class="inline-block bg-white/20 text-white text-xs uppercase tracking-wider py-2 px-4 rounded-full font-semibold mb-4">Join Our Community</span>
+                <h2 class="font-['Cormorant_Garamond'] text-4xl mb-6">Transform Your Life Through Yoga</h2>
+                <p class="mb-6">Connect with Kerala's premier yoga teacher training institute and receive our exclusive resources, early enrollment benefits, and expert guidance delivered straight to your inbox.</p>
                 <ul class="space-y-3">
                     <li class="flex items-center gap-3">
                         <i class="fas fa-check-circle"></i>
-                        <span>Monthly newsletter with practice tips</span>
+                        <span>₹5,000 discount for early subscribers</span>
                     </li>
                     <li class="flex items-center gap-3">
                         <i class="fas fa-check-circle"></i>
-                        <span>Early bird discounts on workshops</span>
+                        <span>Free 45-minute consultation call</span>
                     </li>
                     <li class="flex items-center gap-3">
                         <i class="fas fa-check-circle"></i>
-                        <span>Free yoga resources and guides</span>
+                        <span>Exclusive video lessons and practice guides</span>
                     </li>
                 </ul>
             </div>
             
-            <!-- Right Form with Glassmorphism -->
-            <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl">
+            <!-- Right Form with Enhanced Design -->
+            <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 shadow-xl">
                 <form class="space-y-4">
                     <div>
                         <label for="name" class="text-sm font-medium block mb-1">Your Name</label>
                         <input type="text" id="name" placeholder="Enter your name" 
-                               class="w-full px-4 py-3 rounded bg-white/20 border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50 placeholder:text-white/60 text-white">
+                               class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50 placeholder:text-white/60 text-white">
                     </div>
                     
                     <div>
                         <label for="email" class="text-sm font-medium block mb-1">Email Address</label>
                         <input type="email" id="email" placeholder="Enter your email" 
-                               class="w-full px-4 py-3 rounded bg-white/20 border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50 placeholder:text-white/60 text-white">
+                               class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50 placeholder:text-white/60 text-white">
+                    </div>
+                    
+                    <div>
+                        <label for="phone" class="text-sm font-medium block mb-1">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="Enter your mobile number" 
+                               class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50 placeholder:text-white/60 text-white">
                     </div>
                     
                     <div>
                         <label for="interest" class="text-sm font-medium block mb-1">I'm interested in</label>
                         <select id="interest" 
-                                class="w-full px-4 py-3 rounded bg-white/20 border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50 text-white">
-                            <option value="" class="bg-secondary">Select your interest</option>
-                            <option value="level-one" class="bg-secondary">Level One Certification</option>
-                            <option value="level-two" class="bg-secondary">Level Two Certification</option>
-                            <option value="workshops" class="bg-secondary">Specialized Workshops</option>
-                            <option value="general" class="bg-secondary">General Information</option>
+                                class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50 text-white appearance-none">
+                            <option value="" class="bg-primary-dark">Select your interest</option>
+                            <option value="level-one" class="bg-primary-dark">200-Hour Teacher Training</option>
+                            <option value="level-two" class="bg-primary-dark">300-Hour Advanced Training</option>
+                            <option value="workshops" class="bg-primary-dark">Specialized Workshops</option>
+                            <option value="general" class="bg-primary-dark">General Information</option>
                         </select>
                     </div>
                     
                     <button type="submit" 
-                            class="w-full bg-white text-secondary font-medium py-3 px-6 rounded shadow-md hover:shadow-xl hover:bg-neutral transition-all duration-300">
-                        Subscribe Now
+                            class="w-full bg-white text-primary font-medium py-4 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center">
+                        <span>Begin Your Transformation</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
                     </button>
                     
-                    <p class="text-xs text-center text-white/70">We respect your privacy. Unsubscribe at any time.</p>
+                    <p class="text-xs text-center text-white/70">By subscribing, you'll receive our newsletter and occasional promotions. We respect your privacy and will never share your information.</p>
                 </form>
             </div>
         </div>

@@ -1,5 +1,8 @@
 {% include "header.njk" %}
 
+<!-- Extra padding for header -->
+<div class="pt-10"></div>
+
 <!-- Hero Section -->
 <section class="py-20 relative overflow-hidden">
     <!-- Background Image -->
@@ -17,21 +20,26 @@
             </h1>
             <div class="w-32 h-0.5 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
             <p class="text-xl text-gray-200 leading-relaxed">
-                Learn from experienced teachers who combine deep knowledge of traditional yoga with modern teaching expertise.
+                Learn from experienced teachers who combine deep knowledge of traditional yoga with modern teaching methodologies, each bringing their unique life journey to enrich your learning experience.
             </p>
         </div>
     </div>
 </section>
 
+
+
 <!-- Faculty Grid Section -->
 <section class="py-20 bg-gray-50">
     <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <h2 class="font-['Cormorant_Garamond'] text-3xl font-medium text-gray-800 mb-6 text-center">Core Faculty Members</h2>
+        <div class="w-24 h-0.5 bg-gradient-to-r from-primary to-secondary mx-auto mb-16"></div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 max-w-7xl mx-auto">
             <!-- Faculty Card 1 -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-sm group">
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm group hover:shadow-md transition-shadow">
                 <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80" 
-                         alt="Guru Amit Sharma" 
+                    <img src="https://images.pexels.com/photos/1546912/pexels-photo-1546912.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                         alt="Shanoj PK" 
                          class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <div class="absolute bottom-4 left-4">
@@ -41,9 +49,16 @@
                     </div>
                 </div>
                 <div class="p-6">
-                    <h3 class="font-['Cormorant_Garamond'] text-xl font-medium text-gray-800 mb-2">Guru Amit Sharma</h3>
-                    <p class="text-gray-500 text-sm mb-4">E-RYT 500, 20+ Years Experience</p>
-                    <p class="text-gray-600 mb-4">Specializes in traditional Hatha Yoga and advanced pranayama techniques.</p>
+                    <h3 class="font-['Cormorant_Garamond'] text-2xl font-medium text-gray-800 mb-2">Shanoj PK</h3>
+                    <p class="text-gray-500 text-sm mb-4">AYUSH-Certified Yoga Trainer, 12+ Years Experience</p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, optio odit minima quidem modi error animi quas voluptatem distinctio impedit dolorem ipsa repudiandae fugit voluptate. Tempora repellat architecto dolorum. Mollitia!                    </p>
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                            <i class="fas fa-om text-primary"></i>
+                        </div>
+                        <span class="text-gray-700 text-sm">Specializes in Hatha Yoga and Alignment</span>
+                    </div>
                     <div class="flex space-x-3">
                         <a href="#" class="text-gray-400 hover:text-primary">
                             <i class="fab fa-linkedin"></i>
@@ -56,22 +71,30 @@
             </div>
 
             <!-- Faculty Card 2 -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-sm group">
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm group hover:shadow-md transition-shadow">
                 <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1616699002805-0741e1e4a9c5?auto=format&fit=crop&q=80" 
-                         alt="Dr. Priya Mehta" 
-                         class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="https://images.pexels.com/photos/1546912/pexels-photo-1546912.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                    alt="Shanoj PK" 
+                    class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <div class="absolute bottom-4 left-4">
                         <p class="text-white text-sm font-medium bg-secondary/80 backdrop-blur-sm rounded-full px-3 py-1">
-                            Yoga Therapy
+                            Ayurveda & Yoga Specialist
                         </p>
                     </div>
                 </div>
                 <div class="p-6">
-                    <h3 class="font-['Cormorant_Garamond'] text-xl font-medium text-gray-800 mb-2">Dr. Priya Mehta</h3>
-                    <p class="text-gray-500 text-sm mb-4">PhD in Yoga Therapy, E-RYT 500</p>
-                    <p class="text-gray-600 mb-4">Expert in therapeutic yoga and mindfulness practices.</p>
+                    <h3 class="font-['Cormorant_Garamond'] text-2xl font-medium text-gray-800 mb-2">Bijeesh K</h3>
+                    <p class="text-gray-500 text-sm mb-4"> Graduate, AYUSH Ministry Consultant</p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit incidunt molestiae sunt porro atque perspiciatis obcaecati, quisquam doloribus, quos itaque possimus dolore eveniet aut sed. Cupiditate expedita impedit delectus placeat.
+                    </p>
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                            <i class="fas fa-leaf text-primary"></i>
+                        </div>
+                        <span class="text-gray-700 text-sm">Specializes in Ayurvedic Yoga Therapy</span>
+                    </div>
                     <div class="flex space-x-3">
                         <a href="#" class="text-gray-400 hover:text-primary">
                             <i class="fab fa-linkedin"></i>
@@ -84,22 +107,31 @@
             </div>
 
             <!-- Faculty Card 3 -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-sm group">
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm group hover:shadow-md transition-shadow">
                 <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1599447421416-3414500d18a5?auto=format&fit=crop&q=80" 
-                         alt="John Matthews" 
-                         class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="https://images.pexels.com/photos/1546912/pexels-photo-1546912.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                    alt="Shanoj PK" 
+                    class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <div class="absolute bottom-4 left-4">
                         <p class="text-white text-sm font-medium bg-primary/80 backdrop-blur-sm rounded-full px-3 py-1">
-                            Asana Expert
+                            Meditation & Philosophy Teacher
                         </p>
                     </div>
                 </div>
                 <div class="p-6">
-                    <h3 class="font-['Cormorant_Garamond'] text-xl font-medium text-gray-800 mb-2">John Matthews</h3>
-                    <p class="text-gray-500 text-sm mb-4">E-RYT 500, Former Athlete</p>
-                    <p class="text-gray-600 mb-4">Specializes in alignment and athletic yoga practices.</p>
+                    <h3 class="font-['Cormorant_Garamond'] text-2xl font-medium text-gray-800 mb-2">Jishnu AB</h3>
+                    <p class="text-gray-500 text-sm mb-4">AYUSH-Certified Meditation Trainer</p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptates aspernatur molestias quod ipsam deserunt autem ut dolorem laborum ad pariatur debitis, labore voluptatum eveniet minus vitae nulla excepturi voluptatibus.
+                    </p>
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                            <i class="fas fa-brain text-primary"></i>
+                        </div>
+                        <span class="text-gray-700 text-sm">Specializes in Yoga Philosophy and Meditation</span>
+                    </div>
                     <div class="flex space-x-3">
                         <a href="#" class="text-gray-400 hover:text-primary">
                             <i class="fab fa-linkedin"></i>
@@ -109,6 +141,89 @@
                         </a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Teaching Approach -->
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="font-['Cormorant_Garamond'] text-3xl font-medium text-gray-800 mb-6 text-center">Our Teaching Approach</h2>
+            <div class="w-24 h-0.5 bg-gradient-to-r from-primary to-secondary mx-auto mb-12"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-hands text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-medium text-gray-800">Traditional Foundations</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Our teaching is firmly rooted in authentic yogic traditions passed down through generations. We honor the classical texts and practices while making them accessible and relevant to contemporary students.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-microscope text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-medium text-gray-800">Modern Integration</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        We complement traditional practices with insights from modern science, anatomy, and psychology to create a comprehensive understanding of how yoga affects the body and mind.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user-friends text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-medium text-gray-800">Personalized Guidance</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        We maintain small class sizes to ensure each student receives individual attention. Our teachers adapt their instruction to accommodate different body types, abilities, and learning styles.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-balance-scale text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-medium text-gray-800">Holistic Development</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        We embrace all aspects of yoga beyond just physical postures, encouraging students to explore pranayama, meditation, philosophy, and ethical principles for complete transformation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Join Our Team CTA -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto bg-gray-50 rounded-2xl p-8 md:p-12 shadow-sm">
+            <div class="text-center mb-8">
+                <h2 class="font-['Cormorant_Garamond'] text-3xl font-medium text-gray-800 mb-4">Join Our Teaching Faculty</h2>
+                <p class="text-gray-600">
+                    Are you an experienced yoga teacher with a passion for sharing authentic practices? 
+                    We're always interested in connecting with skilled instructors who align with our values.
+                </p>
+            </div>
+            <div class="flex justify-center">
+                <a href="/contact#careers" class="inline-flex items-center bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                    Get in Touch
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
             </div>
         </div>
     </div>
