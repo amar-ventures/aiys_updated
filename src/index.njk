@@ -723,25 +723,25 @@
                 <form class="space-y-4" action="https://api.sinspire.in/php-api/index.php" method="post">
                     <div>
                         <label for="name" class="text-sm font-medium block mb-1">Your Name</label>
-                        <input type="text" id="name" placeholder="Enter your name" 
+                        <input type="text" id="name" name="name" placeholder="Enter your name" 
                                class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50 placeholder:text-white/60 text-white">
                     </div>
                     
                     <div>
                         <label for="email" class="text-sm font-medium block mb-1">Email Address</label>
-                        <input type="email" id="email" placeholder="Enter your email" 
+                        <input type="email" name="email" id="email" placeholder="Enter your email" 
                                class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50 placeholder:text-white/60 text-white">
                     </div>
                     
                     <div>
                         <label for="phone" class="text-sm font-medium block mb-1">Phone Number</label>
-                        <input type="tel" id="phone" placeholder="Enter your mobile number" 
+                        <input type="tel" name="phone" id="phone" placeholder="Enter your mobile number" 
                                class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50 placeholder:text-white/60 text-white">
                     </div>
                     
                     <div>
                         <label for="interest" class="text-sm font-medium block mb-1">I'm interested in</label>
-                        <select id="interest" 
+                        <select name="interest" id="interest" 
                                 class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50 text-white appearance-none">
                             <option value="" class="bg-primary-dark">Select your interest</option>
                             <option value="level-one" class="bg-primary-dark">200-Hour Teacher Training</option>
@@ -759,9 +759,74 @@
                     
                     <p class="text-xs text-center text-white/70">By subscribing, you'll receive our newsletter and occasional promotions. We respect your privacy and will never share your information.</p>
                 </form>
+                {% include "popup.njk" %}
             </div>
         </div>
     </div>
 </section>
+
+<script>
+    function showPopup(message, isSuccess = true) {
+    const popup = document.getElementById('notification-popup');
+    const content = document.getElementById('popup-content');
+    
+    content.innerHTML = `
+        <div class="mb-4">
+            <span class="inline-block p-3 rounded-full ${isSuccess ? 'bg-green-100 text-green-500' : 'bg-red-100 text-red-500'}">
+                <i class="fas ${isSuccess ? 'fa-check' : 'fa-times'} text-2xl"></i>
+            </span>
+        </div>
+        <h3 class="text-xl font-medium text-gray-900 mb-2">
+            ${isSuccess ? 'Thank You!' : 'Oops!'}
+        </h3>
+        <p class="text-gray-600">
+            ${message}
+        </p>
+    `;
+    
+    popup.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+}
+
+function closePopup() {
+    const popup = document.getElementById('notification-popup');
+    popup.classList.add('hidden');
+    document.body.style.overflow = 'auto';
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const forms = document.querySelectorAll('form[action*="api.sinspire.in"]');
+    
+    forms.forEach(form => {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(form);
+            
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                if (data.success) {
+                    showPopup('Your form has been submitted successfully. Our team will contact you shortly for the consultation.');
+                    form.reset();
+                } else {
+                    showPopup('There was an error submitting your form. Please try again or contact us directly.', false);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                showPopup('There was an error submitting your form. Please try again or contact us directly.', false);
+            });
+        });
+    });
+});
+</script>
 
 {% include "footer.njk" %}
