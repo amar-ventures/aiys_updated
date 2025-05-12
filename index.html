@@ -1042,7 +1042,81 @@
                     
                     <p class="text-xs text-center text-white/70">By subscribing, you'll receive our newsletter and occasional promotions. We respect your privacy and will never share your information.</p>
                 </form>
-                
+                <div id="notification-popup" class="fixed inset-0 flex items-center justify-center z-50 hidden">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="bg-white rounded-lg p-8 max-w-md mx-4 relative z-10 transform transition-all">
+        <div id="popup-content" class="text-center">
+            <!-- Content will be injected by JS -->
+        </div>
+        <button onclick="closePopup()" class="mt-6 w-full bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-lg transition-colors">
+            Close
+        </button>
+    </div>
+</div>
+
+<script>
+    function showPopup(message, isSuccess = true) {
+    const popup = document.getElementById('notification-popup');
+    const content = document.getElementById('popup-content');
+    
+    content.innerHTML = `
+        <div class="mb-4">
+            <span class="inline-block p-3 rounded-full ${isSuccess ? 'bg-green-100 text-green-500' : 'bg-red-100 text-red-500'}">
+                <i class="fas ${isSuccess ? 'fa-check' : 'fa-times'} text-2xl"></i>
+            </span>
+        </div>
+        <h3 class="text-xl font-medium text-gray-900 mb-2">
+            ${isSuccess ? 'Thank You!' : 'Oops!'}
+        </h3>
+        <p class="text-gray-600">
+            ${message}
+        </p>
+    `;
+    
+    popup.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+}
+
+function closePopup() {
+    const popup = document.getElementById('notification-popup');
+    popup.classList.add('hidden');
+    document.body.style.overflow = 'auto';
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const forms = document.querySelectorAll('form[action*="api.sinspire.in"]');
+    
+    forms.forEach(form => {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(form);
+            
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                if (data.success) {
+                    showPopup('Your form has been submitted successfully. Our team will contact you shortly for the consultation.');
+                    form.reset();
+                } else {
+                    showPopup('There was an error submitting your form. Please try again or contact us directly.', false);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                showPopup('There was an error submitting your form. Please try again or contact us directly.', false);
+            });
+        });
+    });
+});
+</script>
             </div>
         </div>
     </div>
